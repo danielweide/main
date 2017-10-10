@@ -24,12 +24,12 @@ public class RemarkCommandTest {
         assertCommandFailure(prepareCommand(), model, MESSAGE_NOT_IMPLEMENTED_YET);
 }
 
-/**
-* Returns an {@code RemarkCommand}.
-*/
-private RemarkCommand prepareCommand() {
-    RemarkCommand remarkCommand = new RemarkCommand();
-    remarkCommand.setData(model, new CommandHistory(), new UndoRedoStack());
-    return remarkCommand;
+    /**
+    * Returns an {@code RemarkCommand}.
+    */
+    private RemarkCommand prepareCommand() {
+        RemarkCommand remarkCommand = new RemarkCommand();
+        remarkCommand.setData(model, new CommandHistory(), new UndoRedoStack());
+        return remarkCommand;
     }
 }
