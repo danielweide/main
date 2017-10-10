@@ -31,6 +31,5 @@ private RemarkCommand prepareCommand() {
     RemarkCommand remarkCommand = new RemarkCommand();
     remarkCommand.setData(model, new CommandHistory(), new UndoRedoStack());
     return remarkCommand;
-    
-}
+    }
 }
