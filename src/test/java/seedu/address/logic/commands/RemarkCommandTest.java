@@ -22,7 +22,7 @@ public class RemarkCommandTest {
     @Test
     public void execute() throws Exception {
         assertCommandFailure(prepareCommand(), model, MESSAGE_NOT_IMPLEMENTED_YET);
-}
+    }
 
     /**
     * Returns an {@code RemarkCommand}.
