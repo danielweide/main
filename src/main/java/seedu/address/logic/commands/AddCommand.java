@@ -19,7 +19,6 @@ public class AddCommand extends UndoableCommand {
 
     public static final String COMMAND_WORD = "add";
     public static final String COMMAND_ALIAS = "a";
-
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Adds a person to the address book. "
             + "Parameters: "
             + PREFIX_NAME + "NAME "
@@ -50,10 +49,13 @@ public class AddCommand extends UndoableCommand {
     @Override
     public CommandResult executeUndoableCommand() throws CommandException {
         requireNonNull(model);
+        SpeechCommand speechCom = new SpeechCommand();
         try {
             model.addPerson(toAdd);
+            speechCom.speechCall("New Person Added");
             return new CommandResult(String.format(MESSAGE_SUCCESS, toAdd));
         } catch (DuplicatePersonException e) {
+            speechCom.speechCall("This person already exists in the address book");
             throw new CommandException(MESSAGE_DUPLICATE_PERSON);
         }
 
