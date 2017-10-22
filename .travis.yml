@@ -7,10 +7,6 @@ script: >-
     ./config/travis/run-checks.sh &&
     travis_retry ./gradlew clean checkstyleMain checkstyleTest headless allTests coverage coveralls asciidoctor
 
-script:
-       - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./travis/run_on_pull_requests; fi'
-       - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./travis/run_on_non_pull_requests; fi'
-
 deploy:
   skip_cleanup: true
   provider: script
