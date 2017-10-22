@@ -30,3 +30,6 @@ cache:
 
 before_install:
 - chmod +x gradlew
+
+install: echo "skip 'gradle assemble' step"
+script: gradle build --continue
