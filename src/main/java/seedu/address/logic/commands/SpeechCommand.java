@@ -10,20 +10,13 @@ public class SpeechCommand {
     private static final String VOICENAME_kevin = "kevin16";
 
     /**
-    * Speaks Method To Make Application Speaks
-    */
-    private void speak(String command) {
+     * Speaks Method To Make Application Speaks
+     */
+    public void speak(String command) {
         Voice voice;
         VoiceManager voiceManager = VoiceManager.getInstance();
         voice = voiceManager.getVoice(VOICENAME_kevin);
         voice.allocate();
         voice.speak(command);
-    }
-    /**
-    * Method to call when Speech Command is Needed
-    */
-    public void speechCall(String command) {
-        SpeechCommand speechcommand = new SpeechCommand();
-        speechcommand.speak(command);
     }
 }
