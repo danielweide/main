@@ -1,0 +1,15 @@
+Hoon Meier Phone: 8482424 Email: stefan@example.com Address: little india Tags: [friends]	2017-10-24T02:24:39.693
+Alice Pauline Phone: 85355255 Email: alice@gmail.com Address: 123, Jurong West Ave 6, #08-111 Tags: [friends]	2017-10-24T02:24:54.945
+Alice Pauline Phone: 85355255 Email: alice@gmail.com Address: 123, Jurong West Ave 6, #08-111 Tags: [friends]	2017-10-24T02:24:56.035
+Amy Bee Phone: 11111111 Email: amy@example.com Address: Block 312, Amy Street 1 Tags: [friend]	2017-10-24T02:26:27.638
+Amy Bee Phone: 11111111 Email: amy@example.com Address: Block 312, Amy Street 1 Tags: [friend]	2017-10-24T02:26:29.675
+Bob Choo Phone: 11111111 Email: amy@example.com Address: Block 312, Amy Street 1 Tags: [friend]	2017-10-24T02:26:32.416
+Amy Bee Phone: 22222222 Email: amy@example.com Address: Block 312, Amy Street 1 Tags: [friend]	2017-10-24T02:26:33.386
+Amy Bee Phone: 11111111 Email: bob@example.com Address: Block 312, Amy Street 1 Tags: [friend]	2017-10-24T02:26:34.327
+Amy Bee Phone: 11111111 Email: amy@example.com Address: Block 123, Bobby Street 3 Tags: [friend]	2017-10-24T02:26:35.278
+Ida Mueller Phone: 8482131 Email: hans@example.com Address: chicago ave Tags: [friends]	2017-10-24T02:26:37.146
+Alice Pauline Phone: 85355255 Email: alice@example.com Address: 123, Jurong West Ave 6, #08-111 Tags: [friends]	2017-10-24T02:26:38.957
+Bob Choo Phone: 22222222 Email: bob@example.com Address: Block 123, Bobby Street 3 Tags: [friend][husband]	2017-10-24T02:26:39.783
+Carl Kurz Phone: 95352563 Email: heinz@example.com Address: wall street Tags: [colleagues]	2017-10-24T02:26:44.535
+Hoon Meier Phone: 8482424 Email: stefan@example.com Address: little india Tags: [friends]	2017-10-24T02:26:45.381
+Bob Choo Phone: 22222222 Email: bob@example.com Address: Block 123, Bobby Street 3 Tags: [friend][husband]	2017-10-24T02:28:03.470
