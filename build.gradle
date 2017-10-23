@@ -30,9 +30,7 @@ allprojects {
         mavenCentral()
         maven { url "https://repo.eclipse.org/content/repositories/egit-releases/" }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
-        flatDir {
-            dir 'speechlib'
-        }
+        maven { url "https://mvnrepository.com/artifact/net.sf.sociaal/freetts" }
     }
 
     // This part is similar to global variables
@@ -68,7 +66,7 @@ allprojects {
         compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
         compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonDataTypeVersion"
         compile "com.google.guava:guava:$guavaVersion"
-        compile fileTree(dir: 'speechlib', include: ['*.jar'])
+        compile group: 'net.sf.sociaal', name: 'freetts', version: '1.2.2'
 
         testCompile "junit:junit:$junitVersion"
         testCompile "org.testfx:testfx-core:$testFxVersion"
