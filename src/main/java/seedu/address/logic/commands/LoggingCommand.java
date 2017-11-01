@@ -14,6 +14,7 @@ import seedu.address.commons.core.LogsCenter;
 /**
  * Method to Keep Track of User Activity Log
  */
+//@@danielweide
 public class LoggingCommand {
     private final Logger logger = LogsCenter.getLogger(LoggingCommand.class);
     /**
