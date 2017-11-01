@@ -1,20 +1,10 @@
-package seedu.address.logic.commands;
-import java.io.BufferedWriter;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.time.LocalDateTime;
-import java.util.logging.Logger;
-
-import seedu.address.commons.core.LogsCenter;
-
-
-/**
- * Method to Keep Track of User Activity Log
- */
-//@@author danielweide
+# danielweide
+###### \java\seedu\address\logic\commands\AddCommand.java
+``` java
+    public static final String COMMAND_ALIAS = "a";
+```
+###### \java\seedu\address\logic\commands\LoggingCommand.java
+``` java
 public class LoggingCommand {
     private final Logger logger = LogsCenter.getLogger(LoggingCommand.class);
     /**
@@ -49,3 +39,18 @@ public class LoggingCommand {
         }
     }
 }
+```
+###### \java\seedu\address\logic\commands\QrCommand.java
+``` java
+public class QrCommand {
+    /**
+     * Method to Generate PhoneCall QRCode
+     */
+    public String qrCall(String phoneNum) {
+        String qrCodeA = "http://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=tel%3A";
+        String qrCodeB = "&qzone=1&margin=0&size=150x150&ecc=L";
+        String fullQr = qrCodeA + phoneNum + qrCodeB;
+        return fullQr;
+    }
+}
+```

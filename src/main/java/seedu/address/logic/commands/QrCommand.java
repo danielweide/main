@@ -3,7 +3,7 @@ package seedu.address.logic.commands;
 /**
  * Method for application to call out for different QR Functions
  */
-//@@danielweide
+//@@author danielweide
 public class QrCommand {
     /**
      * Method to Generate PhoneCall QRCode
