@@ -82,7 +82,7 @@ You may also use shorter command which does the same function of adding contact 
 
 [TIP]
 A person can have any number of tags (including 0) +
-It is advisable for you to include tag as it allows you to search for certain group of people with ease such as using link:#tag[filter by tags] features.
+It is advisable for you to include tag as it allows you to search for certain group of people with ease such as using link:#filtertag[filter by tags] features.
 
 Examples:
 
@@ -90,7 +90,7 @@ Examples:
 * `a n/Betsy Crowe t/friend e/betsycrowe@example.com a/Newgate Prison p/1234567 t/criminal`
 
 === Listing all persons : `list`
-
+If you are uncomfortable with filtered contact being displayed you can use this function to display all the contacts in the person list panel.
 Shows a list of all persons in the address book. +
 Format: `list` or `l`
 
@@ -289,7 +289,7 @@ The `redo` command fails as there are no `undo` commands executed previously.
 Sorts the contacts in the address book based on the name. +
 Format: `sort` or `ss`
 
-[[tag]]
+[[filtertag]]
 === Filtering list by tags : `tag`
 (added in v1.2)
 
