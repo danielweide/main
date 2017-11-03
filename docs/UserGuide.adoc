@@ -64,19 +64,25 @@ e.g. typing *`help`* and pressing kbd:[Enter] will open the help window.
 
 == Features
 
+Now you are ready to start using some of the more advanced features that we have in the our applications. +
+The following section contains all of the commands that you can use in this application.
+
 === Viewing help : `help`
 
+If you encounter any difficulties during the use of the application you may key in help in the command line to gain access to our user guide. +
 Format: `help`
 
 === Adding a person: `add`
 
-Adds a person to the address book +
+You can also add the contact information of the person into the address book that you just made connections using the following command. +
 Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]...` +
 OR +
+You may also use shorter command which does the same function of adding contact +
 `a n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]...`
 
 [TIP]
-A person can have any number of tags (including 0)
+A person can have any number of tags (including 0) +
+It is advisable for you to include tag as it allows you to search for certain group of people with ease such as using link:#Filtering list by tags : `tag`[filter by tags] features.
 
 Examples:
 
