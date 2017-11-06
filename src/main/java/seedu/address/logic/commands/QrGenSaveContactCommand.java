@@ -9,69 +9,68 @@ public class QrGenSaveContactCommand {
      * Method to Generate SaveContact for Phone QRCode
      */
     public String qrSaveContact(String phoneNum, String contactName, String contactEmail) {
-
         String qrCodeA = "http://";
         String qrCodeB = "api.qrserver.com/";
         String qrCodeC = "v1/";
         String qrCodeD = "create-qr-code/";
         String qrCodeE = "?color=000000";
         String qrCodeF = "&bgcolor=FFFFFF";
-        String qrCodeG = "&data";
-        String qrCodeH = "=BEGIN";
-        String qrCodeI = "%3A";
-        String qrCodeJ = "VCARD";
+        String qrCodeG = "&data=";
+        String qrCodeH = "BEGIN";
+        String qrCodeI = "%3";
+        String qrCodeJ = "AVCARD";
         String qrCodeK = "%0";
         String qrCodeL = "AVERSION";
-        String qrCodeM = "%3A2.1";
-        String qrCodeN = "%0AFN";
-        String qrCodeO = "%3A";
-        String qrLineA = qrCodeA + qrCodeB + qrCodeC + qrCodeD + qrCodeE + qrCodeF
-                + qrCodeG + qrCodeH + qrCodeI + qrCodeJ + qrCodeK + qrCodeL
-                + qrCodeM + qrCodeN + qrCodeO;
+        String qrCodeM = "%3A";
+        String qrCodeN = "2.1";
+        String qrCodeO = "%0AFN";
+        String qrCodeP = "%3A";
+        String qrLineA = qrCodeA + qrCodeB + qrCodeC + qrCodeD + qrCodeE + qrCodeF + qrCodeE
+                + qrCodeF + qrCodeG + qrCodeH + qrCodeI + qrCodeJ + qrCodeK + qrCodeL + qrCodeM
+                + qrCodeN + qrCodeO + qrCodeP;
+        String newContactName = contactName.replace(',', '+');
+        String qrPartbCodeA = "%0";
+        String qrPartbCodeB = "AN";
+        String qrPartbCodeC = "%3A";
+        String qrPartbCodeD = "%3B";
+        String qrLineB = qrPartbCodeA + qrPartbCodeB + qrPartbCodeC + qrPartbCodeD;
 
-        String qrpartbCodeA = "%0";
-        String qrpartbCodeB = "AN";
-        String qrpartbCodeC = "%3A";
-        String qrpartbCodeD = "%3B";
-        String qrLineB = qrpartbCodeA + qrpartbCodeB + qrpartbCodeC + qrpartbCodeD;
-        String qrpartcCodeA = "%0";
-        String qrpartcCodeB = "ATEL";
-        String qrpartcCodeC = "%3BWORK";
-        String qrpartcCodeD = "%3BVOICE";
-        String qrpartcCodeE = "%3A";
-        String qrLineC = qrpartcCodeA + qrpartcCodeB + qrpartcCodeC + qrpartcCodeD + qrpartcCodeE;
-        String qrpartdCodeA = "%0";
-        String qrpartdCodeB = "AEMAIL";
-        String qrpartdCodeC = "%3";
-        String qrpartdCodeD = "BWORK";
-        String qrpartdCodeE = "%3";
-        String qrpartdCodeF = "BINTERNET";
-        String qrpartdCodeG = "%3A";
-        String qrLineD = qrpartdCodeA + qrpartdCodeB + qrpartdCodeC + qrpartdCodeD + qrpartdCodeE + qrpartdCodeF
-                + qrpartdCodeG;
-        String qrparteCodeA = "%0";
-        String qrparteCodeB = "AORG";
-        String qrparteCodeC = "%3A";
-        String qrLineE = qrparteCodeA + qrparteCodeB + qrparteCodeC;
-        String qrpartfCodeA = "%0";
-        String qrpartfCodeB = "AEND";
-        String qrpartfCodeC = "%3";
-        String qrpartfCodeD = "AVCARD";
-        String qrpartfCodeE = "%0A";
-        String qrpartfCodeF = "&qzone";
-        String qrpartfCodeG = "=1";
-        String qrpartfCodeH = "&margin";
-        String qrpartfCodeI = "=0";
-        String qrpartfCodeJ = "&size";
-        String qrpartfCodeK = "500x500";
-        String qrpartfCodeL = "&ecc";
-        String qrpartfCodeM = "=L";
-        String qrLineF = qrpartfCodeA + qrpartfCodeB + qrpartfCodeC + qrpartfCodeD + qrpartfCodeE + qrpartfCodeF
-                + qrpartfCodeG + qrpartfCodeH + qrpartfCodeI + qrpartfCodeJ + qrpartfCodeK + qrpartfCodeL
-                + qrpartfCodeM;
+        String qrPartcCodeA = "%0";
+        String qrPartcCodeB = "ATEL";
+        String qrPartcCodeC = "%3";
+        String qrPartcCodeD = "BWORK";
+        String qrPartcCodeE = "%3";
+        String qrPartcCodeF = "BVOICE";
+        String qrPartcCodeG = "%3A";
 
-        String fullQr = qrLineA + contactName + qrLineB + contactName + qrLineC + phoneNum + qrLineD + contactEmail
-                + qrLineE + qrLineF;
+        String qrLineC = qrPartcCodeA + qrPartcCodeB + qrPartcCodeC
+                + qrPartcCodeD + qrPartcCodeE + qrPartcCodeF + qrPartcCodeG;
+        String qrPartdCodeA = "%0A";
+        String qrPartdCodeB = "EMAIL";
+        String qrPartdCodeC = "%3";
+        String qrPartdCodeD = "BWORK";
+        String qrPartdCodeE = "%3";
+        String qrPartdCodeF = "BINTERNET";
+        String qrPartdCodeG = "%3A";
+        String qrLineD = qrPartdCodeA + qrPartdCodeB + qrPartdCodeC
+                + qrPartdCodeD + qrPartdCodeE + qrPartdCodeF + qrPartdCodeG;
+        String qrParteCodeA = "%0";
+        String qrParteCodeB = "AEND";
+        String qrParteCodeC = "%3A";
+        String qrParteCodeD = "VCARD";
+        String qrParteCodeE = "%0A";
+        String qrParteCodeF = "&qzone=1";
+        String qrParteCodeG = "&margin=0";
+        String qrParteCodeH = "&size=";
+        String qrParteCodeI = "500x500";
+        String qrParteCodeJ = "&ecc=L";
+        String qrLineE = qrParteCodeA + qrParteCodeB
+                + qrParteCodeC + qrParteCodeD + qrParteCodeE
+                + qrParteCodeF + qrParteCodeG + qrParteCodeH
+                + qrParteCodeI + qrParteCodeJ;
+        String fullQr = qrLineA + newContactName + qrLineB + newContactName
+                + qrLineC + phoneNum + qrLineD + contactEmail + qrLineE;
+
         return fullQr;
     }
 }
