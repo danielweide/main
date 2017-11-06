@@ -28,7 +28,6 @@ public class QrGenSaveContactCommand {
         String qrLineA = qrCodeA + qrCodeB + qrCodeC + qrCodeD + qrCodeE + qrCodeF
                 + qrCodeG + qrCodeH + qrCodeI + qrCodeJ + qrCodeK + qrCodeL
                 + qrCodeM + qrCodeN + qrCodeO;
-
         String qrpartbCodeA = "%0";
         String qrpartbCodeB = "AN";
         String qrpartbCodeC = "%3A";
